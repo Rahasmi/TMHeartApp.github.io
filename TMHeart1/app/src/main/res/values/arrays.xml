@@ -1,0 +1,9 @@
+<resources>
+	
+	<!-- ReferActivity -->
+	<string-array name="refer_activity_btninvite_button_alert_items">
+		<item>Whatsapp</item>
+		<item>Sms</item>
+		<item>Email</item>
+	</string-array>
+</resources>

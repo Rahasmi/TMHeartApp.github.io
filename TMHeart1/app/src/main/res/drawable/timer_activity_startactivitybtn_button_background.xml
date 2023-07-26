@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<corners android:radius="@dimen/timer_activity_startactivitybtn_button_radius"/>
+
+	<solid android:color="@color/timer_activity_startactivitybtn_button_background_color"/>
+</shape>

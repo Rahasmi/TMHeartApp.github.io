@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705921794765",
+    "project_id": "tm-heart",
+    "storage_bucket": "tm-heart.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705921794765:android:caaf86de7bc9fcfa449f84",
+        "android_client_info": {
+          "package_name": "hackveda.devanshu.tmheart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705921794765-9kulublm40fo4g197ub26db8n5g1af8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYFlzq9A8RulAuZi7F48YAUmpmaFSdsEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705921794765-9kulublm40fo4g197ub26db8n5g1af8g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

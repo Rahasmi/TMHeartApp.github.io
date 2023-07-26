@@ -1,0 +1,26 @@
+<resources>
+	
+	<!-- Project level resources -->
+	<color name="material_bottom_sheet_title">#0000008A</color>
+	<color name="color_primary_dark">#000000</color>
+	<color name="color_primary">#000000</color>
+	<color name="material_bottom_sheet_item">#000000DE</color>
+	<color name="color_accent">#000000</color>
+	<color name="color_hint_text">#D0D1D5</color>
+	<color name="color_click_overlay">#555555</color>
+	
+	<!-- Resources for WatchAppActivity -->
+	<color name="watch_app_activity_applogo_constraint_layout_background_color">#252B3E</color>
+	<color name="watch_app_activity_lblapptitle_two_text_view_text_color">#FFFFFF</color>
+	<color name="watch_app_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="watch_app_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="watch_app_activity_lblapptitle_three_text_view_text_color">#FFFFFF</color>
+	<color name="watch_app_activity_section1_constraint_layout_background_color">#252B3E</color>
+	<color name="watch_app_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="watch_app_activity_section2_constraint_layout_background_color">#353D57</color>
+
+	<color name="profile_activity_bgavgheartrate_constraint_layout_background_color">#FD657C</color>
+	<color name="low_color">#00ddff</color>
+	<color name="profile_activity_bgcurrentheartrate_constraint_layout_background_color">#FD65E6</color>
+
+</resources>

@@ -1,0 +1,114 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_constraint_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/watch_app_activity_constraint_layout_constraint_layout_background_color">
+
+    <View
+        android:id="@+id/section2_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/watch_app_activity_section2_constraint_layout_height"
+        android:layout_marginTop="@dimen/watch_app_activity_section2_constraint_layout_margin_top"
+        android:background="@color/watch_app_activity_section2_constraint_layout_background_color"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="359dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section1_constraint_layout"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/watch_app_activity_section1_constraint_layout_height"
+        android:background="@color/watch_app_activity_section1_constraint_layout_background_color"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/apptitle_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/watch_app_activity_apptitle_constraint_layout_height"
+            android:layout_marginTop="@dimen/watch_app_activity_apptitle_constraint_layout_margin_top"
+            android:background="@color/watch_app_activity_apptitle_constraint_layout_background_color"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="10dp">
+
+            <TextView
+                android:id="@+id/lblapptitle_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/font_roboto_regular"
+                android:gravity="center"
+                android:text="@string/watch_app_activity_lblapptitle_text_view_text"
+                android:textColor="@color/watch_app_activity_lblapptitle_text_view_text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/applogo_constraint_layout"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/watch_app_activity_applogo_constraint_layout_height"
+            android:background="@color/watch_app_activity_applogo_constraint_layout_background_color"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/apptitle_constraint_layout"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="47dp">
+
+            <ImageView
+                android:id="@+id/appimage_image_view"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="TODO"
+                android:src="@drawable/appimage_9"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblapptitle_two_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/font_roboto_regular"
+                android:gravity="center"
+                android:text="@string/watch_app_activity_lblapptitle_two_text_view_text"
+                android:textColor="@color/watch_app_activity_lblapptitle_two_text_view_text_color"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lblapptitle_three_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/watch_app_activity_lblapptitle_three_text_view_margin_top"
+                android:fontFamily="@font/font_roboto_regular"
+                android:gravity="center"
+                android:text="@string/watch_app_activity_lblapptitle_three_text_view_text"
+                android:textColor="@color/watch_app_activity_lblapptitle_three_text_view_text_color"
+                android:textSize="10sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lblapptitle_two_text_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

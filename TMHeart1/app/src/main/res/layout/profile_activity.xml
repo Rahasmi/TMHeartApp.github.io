@@ -1,0 +1,1198 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraint_layout_constraint_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/profile_activity_constraint_layout_constraint_layout_background_color">
+
+	<ScrollView
+		android:id="@+id/view_scroll_view"
+		android:layout_width="0dp"
+		android:layout_height="match_parent"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_weight="1">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/view_scroll_view_content"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/section2_constraint_layout"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/profile_activity_section2_constraint_layout_margin_top"
+				android:background="@color/profile_activity_section2_constraint_layout_background_color"
+				app:layout_constraintHorizontal_weight="1"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/backbtn_constraint_layout"
+					android:layout_width="150dp"
+					android:layout_height="@dimen/profile_activity_backbtn_constraint_layout_height"
+					android:layout_marginTop="20dp"
+					android:layout_marginBottom="10dp"
+					android:background="@drawable/red_rounded"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/sectionweight_constraint_layout">
+
+					<TextView
+						android:id="@+id/lblsignupbtn_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="center"
+						android:text="Edit Profile"
+						android:textColor="@color/profile_activity_lblsignupbtn_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblsignupbtn_text_view_text_size"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/sectionweight_constraint_layout"
+					android:layout_width="@dimen/profile_activity_sectionweight_constraint_layout_width"
+					android:layout_height="@dimen/profile_activity_sectionweight_constraint_layout_height"
+					android:layout_marginTop="@dimen/profile_activity_sectionweight_constraint_layout_margin_top"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/sectionheartrate_constraint_layout2"
+					tools:layout_editor_absoluteX="43dp"
+					tools:layout_editor_absoluteY="453dp">
+
+					<TextView
+						android:id="@+id/lblweight_two_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/profile_activity_lblweight_two_text_view_margin_start"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="start"
+						android:text="@string/profile_activity_lblweight_two_text_view_text"
+						android:textColor="@color/profile_activity_lblweight_two_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblweight_two_text_view_text_size"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:layout_editor_absoluteX="6dp"
+						tools:layout_editor_absoluteY="0dp" />
+
+					<View
+						android:id="@+id/bgweight_two_constraint_layout"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_bgweight_two_constraint_layout_height"
+						android:layout_marginTop="@dimen/profile_activity_bgweight_two_constraint_layout_margin_top"
+						android:background="@color/profile_activity_bgweight_two_constraint_layout_background_color"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/tvgoalstatus_two_text_view"
+						tools:layout_editor_absoluteX="0dp"
+						tools:layout_editor_absoluteY="38dp" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/currentweight_constraint_layout"
+						android:layout_width="@dimen/profile_activity_currentweight_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_currentweight_constraint_layout_height"
+						android:layout_marginStart="@dimen/profile_activity_currentweight_constraint_layout_margin_start"
+						android:layout_marginTop="@dimen/profile_activity_currentweight_constraint_layout_margin_top"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/lblweight_two_text_view"
+						tools:layout_editor_absoluteX="25dp"
+						tools:layout_editor_absoluteY="49dp">
+
+						<TextView
+							android:id="@+id/lblcurrentweight_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentweight_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="MyWeight"
+							android:textColor="@color/profile_activity_lblcurrentweight_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgcurrentweight_constraint_layout" />
+
+						<View
+							android:id="@+id/bgcurrentweight_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgcurrentweight_constraint_layout_height"
+							android:layout_marginLeft="5dp"
+							android:layout_marginRight="5dp"
+							android:background="@drawable/status_current_weight"
+							app:layout_constraintHorizontal_weight="0.78"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblcurrentweightvalu_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentweightvalu_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblcurrentweightvalu_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblcurrentweightvalu_text_view_text_size"
+							app:layout_constraintEnd_toEndOf="@+id/bgcurrentweight_constraint_layout"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintStart_toStartOf="@+id/bgcurrentweight_constraint_layout"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/avgweight_constraint_layout"
+						android:layout_width="@dimen/profile_activity_avgweight_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_avgweight_constraint_layout_height"
+						android:layout_marginTop="52dp"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toTopOf="parent">
+
+						<TextView
+							android:id="@+id/lblavgweight_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgweight_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblavgweight_text_view_text"
+							android:textColor="@color/profile_activity_lblavgweight_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgavgweight_constraint_layout" />
+
+						<View
+							android:id="@+id/bgavgweight_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgavgweight_constraint_layout_height"
+							android:layout_marginLeft="8dp"
+							android:layout_marginRight="8dp"
+							android:background="@drawable/status_average_weight"
+							app:layout_constraintHorizontal_weight="0.71"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblavgweightvalue_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgweightvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblavgweightvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblavgweightvalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.32"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/idealweight_constraint_layout"
+						android:layout_width="@dimen/profile_activity_idealweight_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_idealweight_constraint_layout_height"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/avgweight_constraint_layout"
+						app:layout_constraintTop_toTopOf="@+id/avgweight_constraint_layout">
+
+						<TextView
+							android:id="@+id/lblidealweight_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblidealweight_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblidealweight_text_view_text"
+							android:textColor="@color/profile_activity_lblidealweight_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="0.83"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgidealweightvalue_constraint_layout" />
+
+						<View
+							android:id="@+id/bgidealweightvalue_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgidealweightvalue_constraint_layout_height"
+							android:background="@drawable/status_ideal_weight"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent"
+							tools:layout_editor_absoluteX="0dp"
+							tools:layout_editor_absoluteY="0dp" />
+
+						<TextView
+							android:id="@+id/lblidealweightvalue_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblidealweightvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblidealweightvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblidealweightvalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.45"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<TextView
+						android:id="@+id/tvgoalstatus_two_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/profile_activity_tvgoalstatus_two_text_view_margin_top"
+						android:layout_marginEnd="10dp"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="end"
+						android:text="* OverWt = Over Weight, IdealWT = Ideal Weight"
+						android:textColor="@color/profile_activity_tvgoalstatus_two_text_view_text_color"
+						android:textSize="@dimen/profile_activity_tvgoalstatus_two_text_view_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/sectiontargetmessage_constraint_layout"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_sectiontargetmessage_constraint_layout_height"
+						android:background="@color/profile_activity_sectiontargetmessage_constraint_layout_background_color"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						tools:layout_editor_absoluteX="0dp"
+						tools:layout_editor_absoluteY="128dp">
+
+						<TextView
+							android:id="@+id/lbltargetmessage_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginTop="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="No Weight Found"
+							android:textColor="@color/profile_activity_lblalarmraised_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lbltargetmessage_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/sectionheartrate_constraint_layout2"
+					android:layout_width="@dimen/profile_activity_sectionheartrate_constraint_layout_width"
+					android:layout_height="@dimen/profile_activity_sectionheartrate_constraint_layout_height"
+					android:layout_marginTop="@dimen/profile_activity_sectionheartrate_constraint_layout_margin_top"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/sectionheartrate_constraint_layout"
+					tools:layout_editor_absoluteX="43dp"
+					tools:layout_editor_absoluteY="277dp">
+
+					<TextView
+						android:id="@+id/lblheartrate_text_view2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/profile_activity_lblheartrate_text_view_margin_start"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="start"
+						android:text="Heart Rate Recovery"
+						android:textColor="@color/profile_activity_lblheartrate_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblheartrate_text_view_text_size"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:layout_editor_absoluteX="6dp"
+						tools:layout_editor_absoluteY="0dp" />
+
+					<View
+						android:id="@+id/bgheartrate_constraint_layout2"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_bgheartrate_constraint_layout_height"
+						android:layout_marginTop="@dimen/profile_activity_bgheartrate_constraint_layout_margin_top"
+						android:background="@color/profile_activity_bgheartrate_constraint_layout_background_color"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/tvgoalstatus_text_view2" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/currentheartrate_constraint_layout2"
+						android:layout_width="@dimen/profile_activity_currentheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_currentheartrate_constraint_layout_height"
+						android:layout_marginStart="@dimen/profile_activity_currentheartrate_constraint_layout_margin_start"
+						android:layout_marginTop="@dimen/profile_activity_currentheartrate_constraint_layout_margin_top"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view2"
+						tools:layout_editor_absoluteX="25dp"
+						tools:layout_editor_absoluteY="49dp">
+
+						<TextView
+							android:id="@+id/lblcurrentheartrate_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5dp"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentheartrate_text_view_margin_top"
+							android:layout_marginRight="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="Drop 1m"
+							android:textColor="@color/profile_activity_lblcurrentheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgcurrentheartrate_constraint_layout2" />
+
+						<View
+							android:id="@+id/bgcurrentheartrate_constraint_layout2"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgcurrentheartrate_constraint_layout_height"
+							android:layout_marginStart="5dp"
+							android:layout_marginEnd="5dp"
+							android:background="@drawable/status_current_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.78"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblcurrentheartratev_text_view2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentheartratev_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center_horizontal"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblcurrentheartratev_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblcurrentheartratev_text_view_text_size"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/avgheartrate_constraint_layout2"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_avgheartrate_constraint_layout_height"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="@dimen/profile_activity_avgheartrate_constraint_layout_margin_top"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/currentheartrate_constraint_layout2"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view2">
+
+						<TextView
+							android:id="@+id/lblavgheartrate_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="Drop 2m"
+							android:textColor="@color/profile_activity_lblavgheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgavgheartrate_constraint_layout2" />
+
+						<View
+							android:id="@+id/bgavgheartrate_constraint_layout2"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgavgheartrate_constraint_layout_height"
+							android:layout_marginStart="8dp"
+							android:layout_marginEnd="8dp"
+							android:background="@drawable/status_average_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.71"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblavgheartratevalue_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartratevalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblavgheartratevalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblavgheartratevalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.32"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/highheartrate_constraint_layout2"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_avgheartrate_constraint_layout_height"
+						android:layout_marginStart="70dp"
+						android:layout_marginTop="@dimen/profile_activity_avgheartrate_constraint_layout_margin_top"
+						app:layout_constraintStart_toEndOf="@+id/currentheartrate_constraint_layout2"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view2">
+
+						<TextView
+							android:id="@+id/lblhighheartrate_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="RecTime"
+							android:textColor="@color/profile_activity_lblavgheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bghighheartrate_constraint_layout2" />
+
+						<View
+							android:id="@+id/bghighheartrate_constraint_layout2"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgavgheartrate_constraint_layout_height"
+							android:layout_marginStart="8dp"
+							android:layout_marginEnd="8dp"
+							android:background="@drawable/status_average_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.71"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblhighheartratevalue_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartratevalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblavgheartratevalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblavgheartratevalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.32"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/idealheartrate_constraint_layout2"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_idealheartrate_constraint_layout_height"
+						android:layout_marginStart="50dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/avgheartrate_constraint_layout2"
+						app:layout_constraintTop_toTopOf="@+id/avgheartrate_constraint_layout2">
+
+						<TextView
+							android:id="@+id/lblidealheartrate_text_view2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblidealheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="RecRate"
+							android:textColor="@color/profile_activity_lblidealheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="0.83"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgidealheartrate_constraint_layout2" />
+
+						<View
+							android:id="@+id/bgidealheartrate_constraint_layout2"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgidealheartrate_constraint_layout_height"
+							android:layout_marginLeft="8dp"
+							android:layout_marginRight="8dp"
+							android:background="@drawable/status_ideal_heart_rate"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/max_heart_rate_textview2"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblheartvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblheartvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblheartvalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.45"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<TextView
+						android:id="@+id/tvgoalstatus_text_view2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/profile_activity_tvgoalstatus_text_view_margin_top"
+						android:layout_marginEnd="10dp"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="end"
+						android:text="* RecRate = Recovery Rate, RecTime = Recovery Time"
+						android:textColor="@color/profile_activity_tvgoalstatus_text_view_text_color"
+						android:textSize="@dimen/profile_activity_tvgoalstatus_text_view_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/sectionalarmraise_constraint_layout2"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_sectionalarmraise_constraint_layout_height"
+						android:background="@color/profile_activity_sectionalarmraise_constraint_layout_background_color"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						tools:layout_editor_absoluteX="0dp"
+						tools:layout_editor_absoluteY="128dp">
+
+						<TextView
+							android:id="@+id/lblalarmraised_text_view2"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginTop="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="Your fitness status"
+							android:textColor="@color/profile_activity_lblalarmraised_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblalarmraised_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/sectionheartrate_constraint_layout"
+					android:layout_width="@dimen/profile_activity_sectionheartrate_constraint_layout_width"
+					android:layout_height="@dimen/profile_activity_sectionheartrate_constraint_layout_height"
+					android:layout_marginTop="@dimen/profile_activity_sectionheartrate_constraint_layout_margin_top"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/goalbtn_button"
+					tools:layout_editor_absoluteX="43dp"
+					tools:layout_editor_absoluteY="277dp">
+
+					<TextView
+						android:id="@+id/lblheartrate_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/profile_activity_lblheartrate_text_view_margin_start"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="start"
+						android:text="@string/profile_activity_lblheartrate_text_view_text"
+						android:textColor="@color/profile_activity_lblheartrate_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblheartrate_text_view_text_size"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:layout_editor_absoluteX="6dp"
+						tools:layout_editor_absoluteY="0dp" />
+
+					<View
+						android:id="@+id/bgheartrate_constraint_layout"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_bgheartrate_constraint_layout_height"
+						android:layout_marginTop="@dimen/profile_activity_bgheartrate_constraint_layout_margin_top"
+						android:background="@color/profile_activity_bgheartrate_constraint_layout_background_color"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/tvgoalstatus_text_view" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/currentheartrate_constraint_layout"
+						android:layout_width="@dimen/profile_activity_currentheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_currentheartrate_constraint_layout_height"
+						android:layout_marginStart="@dimen/profile_activity_currentheartrate_constraint_layout_margin_start"
+						android:layout_marginTop="@dimen/profile_activity_currentheartrate_constraint_layout_margin_top"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view"
+						tools:layout_editor_absoluteX="25dp"
+						tools:layout_editor_absoluteY="49dp">
+
+						<TextView
+							android:id="@+id/lblcurrentheartrate_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="5dp"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentheartrate_text_view_margin_top"
+							android:layout_marginRight="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="MyHeart"
+							android:textColor="@color/profile_activity_lblcurrentheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgcurrentheartrate_constraint_layout" />
+
+						<View
+							android:id="@+id/bgcurrentheartrate_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgcurrentheartrate_constraint_layout_height"
+							android:layout_marginStart="5dp"
+							android:layout_marginEnd="5dp"
+							android:background="@drawable/status_current_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.78"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblcurrentheartratev_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblcurrentheartratev_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center_horizontal"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblcurrentheartratev_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblcurrentheartratev_text_view_text_size"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/avgheartrate_constraint_layout"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_avgheartrate_constraint_layout_height"
+						android:layout_marginStart="10dp"
+						android:layout_marginTop="@dimen/profile_activity_avgheartrate_constraint_layout_margin_top"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/currentheartrate_constraint_layout"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view">
+
+						<TextView
+							android:id="@+id/lblavgheartrate_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblavgheartrate_text_view_text"
+							android:textColor="@color/profile_activity_lblavgheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgavgheartrate_constraint_layout" />
+
+						<View
+							android:id="@+id/bgavgheartrate_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgavgheartrate_constraint_layout_height"
+							android:layout_marginStart="8dp"
+							android:layout_marginEnd="8dp"
+							android:background="@drawable/status_average_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.71"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblavgheartratevalue_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartratevalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblavgheartratevalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblavgheartratevalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.32"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/highheartrate_constraint_layout"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_avgheartrate_constraint_layout_height"
+						android:layout_marginStart="70dp"
+						android:layout_marginTop="@dimen/profile_activity_avgheartrate_constraint_layout_margin_top"
+						app:layout_constraintStart_toEndOf="@+id/currentheartrate_constraint_layout"
+						app:layout_constraintTop_toBottomOf="@+id/lblheartrate_text_view">
+
+						<TextView
+							android:id="@+id/lblhighheartrate_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="Highs"
+							android:textColor="@color/profile_activity_lblavgheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bghighheartrate_constraint_layout" />
+
+						<View
+							android:id="@+id/bghighheartrate_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgavgheartrate_constraint_layout_height"
+							android:layout_marginStart="8dp"
+							android:layout_marginEnd="8dp"
+							android:background="@drawable/status_average_heart_rate"
+							app:layout_constraintEnd_toEndOf="parent"
+							app:layout_constraintHorizontal_weight="0.71"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/lblhighheartratevalue_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblavgheartratevalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblavgheartratevalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblavgheartratevalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.32"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/idealheartrate_constraint_layout"
+						android:layout_width="@dimen/profile_activity_avgheartrate_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_idealheartrate_constraint_layout_height"
+						android:layout_marginStart="50dp"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintStart_toEndOf="@+id/avgheartrate_constraint_layout"
+						app:layout_constraintTop_toTopOf="@+id/avgheartrate_constraint_layout">
+
+						<TextView
+							android:id="@+id/lblidealheartrate_text_view"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblidealheartrate_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblidealheartrate_text_view_text"
+							android:textColor="@color/profile_activity_lblidealheartrate_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="0.83"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgidealheartrate_constraint_layout" />
+
+						<View
+							android:id="@+id/bgidealheartrate_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgidealheartrate_constraint_layout_height"
+							android:layout_marginLeft="8dp"
+							android:layout_marginRight="8dp"
+							android:background="@drawable/status_ideal_heart_rate"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+
+						<TextView
+							android:id="@+id/max_heart_rate_textview"
+							android:layout_width="0dp"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblheartvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblheartvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblheartvalue_text_view_text_size"
+							app:layout_constraintHorizontal_weight="0.45"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<TextView
+						android:id="@+id/tvgoalstatus_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="@dimen/profile_activity_tvgoalstatus_text_view_margin_top"
+						android:layout_marginEnd="10dp"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="end"
+						android:text="* MaxRate = Maximum Heart Rate"
+						android:textColor="@color/profile_activity_tvgoalstatus_text_view_text_color"
+						android:textSize="@dimen/profile_activity_tvgoalstatus_text_view_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/sectionalarmraise_constraint_layout"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_sectionalarmraise_constraint_layout_height"
+						android:background="@color/profile_activity_sectionalarmraise_constraint_layout_background_color"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						tools:layout_editor_absoluteX="0dp"
+						tools:layout_editor_absoluteY="128dp">
+
+						<TextView
+							android:id="@+id/lblalarmraised_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginLeft="10dp"
+							android:layout_marginTop="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="Please synchronize your watch"
+							android:textColor="@color/profile_activity_lblalarmraised_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblalarmraised_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+				<Button
+					android:id="@+id/goalbtn_button"
+					android:layout_width="@dimen/profile_activity_goalbtn_button_width"
+					android:layout_height="@dimen/profile_activity_goalbtn_button_height"
+					android:layout_marginTop="@dimen/profile_activity_goalbtn_button_margin_top"
+					android:background="@drawable/profile_activity_goalbtn_button_ripple"
+					android:fontFamily="@font/font_ubuntu_bold"
+					android:gravity="center"
+					android:text="Pick a Goal"
+					android:textColor="@color/profile_activity_goalbtn_button_text_color"
+					android:textSize="@dimen/profile_activity_goalbtn_button_text_size"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/sectionprofile_constraint_layout"
+					tools:layout_editor_absoluteX="44dp"
+					tools:layout_editor_absoluteY="206dp" />
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/sectionprofile_constraint_layout"
+					android:layout_width="@dimen/profile_activity_sectionprofile_constraint_layout_width"
+					android:layout_height="@dimen/profile_activity_sectionprofile_constraint_layout_height"
+					android:layout_marginTop="@dimen/profile_activity_sectionprofile_constraint_layout_margin_top"
+					app:layout_constraintEnd_toEndOf="parent"
+					app:layout_constraintHorizontal_bias="0.5"
+					app:layout_constraintStart_toStartOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+					<TextView
+						android:id="@+id/lblprofile_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/profile_activity_lblprofile_text_view_margin_start"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="start"
+						android:text="@string/profile_activity_lblprofile_text_view_text"
+						android:textColor="@color/profile_activity_lblprofile_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblprofile_text_view_text_size"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:layout_editor_absoluteX="6dp"
+						tools:layout_editor_absoluteY="0dp" />
+
+					<View
+						android:id="@+id/sectionprofiledata_constraint_layout"
+						android:layout_width="0dp"
+						android:layout_height="@dimen/profile_activity_sectionprofiledata_constraint_layout_height"
+						android:layout_marginTop="@dimen/profile_activity_sectionprofiledata_constraint_layout_margin_top"
+						android:background="@color/profile_activity_sectionprofiledata_constraint_layout_background_color"
+						app:layout_constraintHorizontal_weight="1"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/tveditprofile_button"
+						tools:layout_editor_absoluteX="0dp"
+						tools:layout_editor_absoluteY="38dp" />
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/userage_constraint_layout"
+						android:layout_width="@dimen/profile_activity_userage_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_userage_constraint_layout_height"
+						android:layout_marginStart="@dimen/profile_activity_userage_constraint_layout_margin_start"
+						android:layout_marginTop="@dimen/profile_activity_userage_constraint_layout_margin_top"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/lblprofile_text_view"
+						tools:layout_editor_absoluteX="25dp"
+						tools:layout_editor_absoluteY="49dp">
+
+						<TextView
+							android:id="@+id/lblage_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblage_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="start"
+							android:text="@string/profile_activity_lblage_text_view_text"
+							android:textColor="@color/profile_activity_lblage_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgage_constraint_layout" />
+
+						<View
+							android:id="@+id/bgage_constraint_layout"
+							android:layout_width="0dp"
+							android:layout_height="@dimen/profile_activity_bgage_constraint_layout_height"
+							android:layout_marginStart="@dimen/profile_activity_bgage_constraint_layout_margin_start"
+							android:layout_marginEnd="@dimen/profile_activity_bgage_constraint_layout_margin_end"
+							android:background="@drawable/status_age"
+							app:layout_constraintHorizontal_weight="0.65"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent"
+							tools:layout_editor_absoluteX="11dp"
+							tools:layout_editor_absoluteY="0dp" />
+
+						<TextView
+							android:id="@+id/lblagevalue_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblagevalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblagevalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblagevalue_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/userheight_constraint_layout"
+						android:layout_width="@dimen/profile_activity_userheight_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_userheight_constraint_layout_height"
+						android:layout_marginTop="52dp"
+						app:layout_constraintEnd_toStartOf="@+id/userweight_constraint_layout"
+						app:layout_constraintStart_toEndOf="@+id/userage_constraint_layout"
+						app:layout_constraintTop_toTopOf="parent">
+
+						<TextView
+							android:id="@+id/lblheight_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblheight_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblheight_text_view_text"
+							android:textColor="@color/profile_activity_lblheight_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgheight_constraint_layout" />
+
+						<View
+							android:id="@+id/bgheight_constraint_layout"
+							android:layout_width="@dimen/profile_activity_bgheight_constraint_layout_width"
+							android:layout_height="@dimen/profile_activity_bgheight_constraint_layout_height"
+							android:background="@drawable/status_height"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent"
+							tools:layout_editor_absoluteX="21dp"
+							tools:layout_editor_absoluteY="0dp" />
+
+						<TextView
+							android:id="@+id/lblheightvalue_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblheightvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblheightvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblheightvalue_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<androidx.constraintlayout.widget.ConstraintLayout
+						android:id="@+id/userweight_constraint_layout"
+						android:layout_width="@dimen/profile_activity_userweight_constraint_layout_width"
+						android:layout_height="@dimen/profile_activity_userweight_constraint_layout_height"
+						android:layout_marginTop="17dp"
+						app:layout_constraintRight_toRightOf="parent"
+						app:layout_constraintTop_toBottomOf="@+id/tveditprofile_button">
+
+						<TextView
+							android:id="@+id/lblweight_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblweight_text_view_margin_top"
+							android:layout_marginRight="5dp"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="@string/profile_activity_lblweight_text_view_text"
+							android:textColor="@color/profile_activity_lblweight_text_view_text_color"
+							android:textSize="11sp"
+							app:layout_constraintHorizontal_weight="1"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintStart_toStartOf="parent"
+							app:layout_constraintTop_toBottomOf="@+id/bgweight_constraint_layout" />
+
+						<View
+							android:id="@+id/bgweight_constraint_layout"
+							android:layout_width="@dimen/profile_activity_bgweight_constraint_layout_width"
+							android:layout_height="@dimen/profile_activity_bgweight_constraint_layout_height"
+							android:layout_marginStart="@dimen/profile_activity_bgweight_constraint_layout_margin_start"
+							android:background="@drawable/status_weight"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintTop_toTopOf="parent"
+							tools:layout_editor_absoluteX="20dp"
+							tools:layout_editor_absoluteY="0dp" />
+
+						<TextView
+							android:id="@+id/lblweightvalue_text_view"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="@dimen/profile_activity_lblweightvalue_text_view_margin_top"
+							android:fontFamily="@font/font_roboto_regular"
+							android:gravity="center"
+							android:text="0"
+							android:textColor="@color/profile_activity_lblweightvalue_text_view_text_color"
+							android:textSize="@dimen/profile_activity_lblweightvalue_text_view_text_size"
+							app:layout_constraintLeft_toLeftOf="parent"
+							app:layout_constraintRight_toRightOf="parent"
+							app:layout_constraintTop_toTopOf="parent" />
+					</androidx.constraintlayout.widget.ConstraintLayout>
+
+					<Button
+						android:id="@+id/tveditprofile_button"
+						android:layout_width="wrap_content"
+						android:layout_height="@dimen/profile_activity_tveditprofile_button_height"
+						android:layout_marginTop="@dimen/profile_activity_tveditprofile_button_margin_top"
+						android:layout_marginEnd="10dp"
+						android:background="?attr/selectableItemBackground"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="center"
+						android:text="@string/profile_activity_tveditprofile_button_text"
+						android:textColor="@color/profile_activity_tveditprofile_button_text_color"
+						android:textSize="@dimen/profile_activity_tveditprofile_button_text_size"
+						app:layout_constraintEnd_toEndOf="parent"
+						app:layout_constraintTop_toTopOf="parent" />
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/section1_constraint_layout"
+				android:layout_width="0dp"
+				android:layout_height="@dimen/profile_activity_section1_constraint_layout_height"
+				app:layout_constraintHorizontal_weight="1"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="0dp"
+				tools:layout_editor_absoluteY="0dp">
+
+				<View
+					android:id="@+id/section1bg_constraint_layout"
+					android:layout_width="0dp"
+					android:layout_height="@dimen/profile_activity_section1bg_constraint_layout_height"
+					android:background="@color/profile_activity_section1bg_constraint_layout_background_color"
+					app:layout_constraintHorizontal_weight="1"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:layout_editor_absoluteX="0dp"
+					tools:layout_editor_absoluteY="0dp" />
+
+				<androidx.constraintlayout.widget.ConstraintLayout
+					android:id="@+id/apptitle_constraint_layout"
+					android:layout_width="0dp"
+					android:layout_height="@dimen/profile_activity_apptitle_constraint_layout_height"
+					android:layout_marginTop="@dimen/profile_activity_apptitle_constraint_layout_margin_top"
+					android:background="@color/profile_activity_apptitle_constraint_layout_background_color"
+					app:layout_constraintHorizontal_weight="1"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:layout_editor_absoluteX="0dp"
+					tools:layout_editor_absoluteY="10dp">
+
+					<TextView
+						android:id="@+id/lblapptitle_text_view"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginStart="@dimen/profile_activity_lblapptitle_text_view_margin_start"
+						android:fontFamily="@font/font_roboto_regular"
+						android:gravity="start"
+						android:text="@string/profile_activity_lblapptitle_text_view_text"
+						android:textColor="@color/profile_activity_lblapptitle_text_view_text_color"
+						android:textSize="@dimen/profile_activity_lblapptitle_text_view_text_size"
+						app:layout_constraintBottom_toBottomOf="parent"
+						app:layout_constraintLeft_toLeftOf="parent"
+						app:layout_constraintTop_toTopOf="parent"
+						tools:layout_editor_absoluteX="49dp"
+						tools:layout_editor_absoluteY="5dp" />
+				</androidx.constraintlayout.widget.ConstraintLayout>
+
+				<ImageView
+					android:id="@+id/applogo_image_view"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="@dimen/profile_activity_applogo_image_view_margin_top"
+					android:layout_marginEnd="@dimen/profile_activity_applogo_image_view_margin_end"
+					android:scaleType="center"
+					android:src="@drawable/applogo_4"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@+id/apptitle_constraint_layout"
+					tools:layout_editor_absoluteX="300dp"
+					tools:layout_editor_absoluteY="49dp" />
+
+				<ImageView
+					android:id="@+id/profileimage_image_view"
+					android:layout_width="100dp"
+					android:layout_height="100dp"
+					android:layout_marginTop="@dimen/profile_activity_profileimage_image_view_margin_top"
+					android:src="@drawable/applogo"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					android:visibility="invisible" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

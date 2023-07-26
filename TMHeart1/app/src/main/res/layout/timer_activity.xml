@@ -1,0 +1,180 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/constraint_layout_constraint_layout"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/timer_activity_constraint_layout_constraint_layout_background_color">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/section2_constraint_layout"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/timer_activity_section2_constraint_layout_height"
+		android:layout_marginTop="@dimen/timer_activity_section2_constraint_layout_margin_top"
+		android:background="@color/timer_activity_section2_constraint_layout_background_color"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="52dp">
+
+		<Button
+			android:id="@+id/startactivitybtn_button"
+			android:layout_width="@dimen/timer_activity_startactivitybtn_button_width"
+			android:layout_height="@dimen/timer_activity_startactivitybtn_button_height"
+			android:layout_marginStart="40dp"
+			android:layout_marginTop="157dp"
+			android:layout_marginEnd="10dp"
+			android:background="@drawable/timer_activity_startactivitybtn_button_ripple"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/timer_activity_startactivitybtn_button_text"
+			android:textColor="@color/timer_activity_startactivitybtn_button_text_color"
+			android:textSize="@dimen/timer_activity_startactivitybtn_button_text_size"
+			app:layout_constraintEnd_toStartOf="@+id/cancelbutton_button"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/pulseCountDown1" />
+
+		<TextView
+			android:id="@+id/timertv_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/timer_activity_timertv_text_view_margin_top"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/timer_activity_timertv_text_view_text"
+			android:textColor="@color/timer_activity_timertv_text_view_text_color"
+			android:textSize="@dimen/timer_activity_timertv_text_view_text_size"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/lbldurationtarget_text_view"
+			tools:layout_editor_absoluteX="110dp"
+			tools:layout_editor_absoluteY="133dp"/>
+
+		<TextView
+			android:id="@+id/lbldurationtarget_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/timer_activity_lbldurationtarget_text_view_margin_top"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/timer_activity_lbldurationtarget_text_view_text"
+			android:textColor="@color/timer_activity_lbldurationtarget_text_view_text_color"
+			android:textSize="@dimen/timer_activity_lbldurationtarget_text_view_text_size"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<Button
+			android:id="@+id/cancelbutton_button"
+			android:layout_width="@dimen/timer_activity_cancelbutton_button_width"
+			android:layout_height="@dimen/timer_activity_cancelbutton_button_height"
+			android:layout_marginTop="157dp"
+			android:layout_marginEnd="40dp"
+			android:background="@drawable/timer_activity_cancelbutton_button_ripple"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/timer_activity_cancelbutton_button_text"
+			android:textColor="@color/timer_activity_cancelbutton_button_text_color"
+			android:textSize="@dimen/timer_activity_cancelbutton_button_text_size"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="@+id/lbldurationtarget_text_view" />
+
+		<TextView
+			android:id="@+id/lblhoursminutes_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/timer_activity_lblhoursminutes_text_view_margin_top"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/timer_activity_lblhoursminutes_text_view_text"
+			android:textColor="@color/timer_activity_lblhoursminutes_text_view_text_color"
+			android:textSize="@dimen/timer_activity_lblhoursminutes_text_view_text_size"
+			app:layout_constraintEnd_toEndOf="@+id/timertv_text_view"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintStart_toStartOf="@+id/timertv_text_view"
+			app:layout_constraintTop_toBottomOf="@+id/timertv_text_view" />
+
+		<com.gusakov.library.PulseCountDown
+			android:id="@+id/pulseCountDown1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="5"
+			android:textSize="100sp"
+			android:visibility="invisible"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:pc_startValue="5" />
+
+		<ImageView
+			android:id="@+id/imageView"
+			android:layout_width="112dp"
+			android:layout_height="66dp"
+			android:layout_marginBottom="10dp"
+			android:foregroundGravity="center_vertical"
+			app:layout_constraintBottom_toTopOf="@+id/lbldurationtarget_text_view"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:srcCompat="@drawable/appimage" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/section1_constraint_layout"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/timer_activity_section1_constraint_layout_height"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="0dp">
+
+		<View
+			android:id="@+id/section1bg_constraint_layout"
+			android:layout_width="0dp"
+			android:layout_height="60dp"
+			android:background="@color/timer_activity_section1bg_constraint_layout_background_color"
+			app:layout_constraintHorizontal_weight="1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/apptitle_constraint_layout"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/timer_activity_apptitle_constraint_layout_height"
+			android:layout_marginTop="@dimen/timer_activity_apptitle_constraint_layout_margin_top"
+			android:background="@color/timer_activity_apptitle_constraint_layout_background_color"
+			app:layout_constraintHorizontal_weight="1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteX="0dp"
+			tools:layout_editor_absoluteY="10dp">
+
+			<TextView
+				android:id="@+id/lblapptitle_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/timer_activity_lblapptitle_text_view_margin_start"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="start"
+				android:text="@string/timer_activity_lblapptitle_text_view_text"
+				android:textColor="@color/timer_activity_lblapptitle_text_view_text_color"
+				android:textSize="@dimen/timer_activity_lblapptitle_text_view_text_size"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="49dp"
+				tools:layout_editor_absoluteY="5dp"/>
+
+
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,381 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/goal_activity"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/goal_activity_constraint_layout_constraint_layout_background_color">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/section2_constraint_layout"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/goal_activity_section2_constraint_layout_height"
+		android:layout_marginTop="56dp"
+		android:background="@color/goal_activity_section2_constraint_layout_background_color"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent">
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/startactivitybtn_constraint_layout"
+			android:layout_width="121dp"
+			android:layout_height="35dp"
+			android:layout_marginBottom="44dp"
+			android:background="@color/goal_activity_startactivitybtn_constraint_layout_background_color"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toStartOf="@+id/startactivitybtn_two_constraint_layout"
+			app:layout_constraintHorizontal_bias="0.672"
+			app:layout_constraintStart_toStartOf="@+id/timerarea_constraint_layout">
+
+			<TextView
+				android:id="@+id/lblstartactivity_text_view"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/goal_activity_lblstartactivity_text_view_margin_start"
+				android:layout_marginEnd="@dimen/goal_activity_lblstartactivity_text_view_margin_end"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_lblstartactivity_text_view_text"
+				android:textColor="@color/goal_activity_lblstartactivity_text_view_text_color"
+				android:textSize="@dimen/goal_activity_lblstartactivity_text_view_text_size"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintHorizontal_weight="0.76"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="13dp"
+				tools:layout_editor_absoluteY="5dp" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/timerarea_constraint_layout"
+			android:layout_width="279dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="@dimen/goal_activity_timerarea_constraint_layout_margin_top"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/lbldurationtarget_text_view">
+
+			<TextView
+				android:id="@+id/reducetimebtn_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/goal_activity_reducetimebtn_text_view_margin_top"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_reducetimebtn_text_view_text"
+				android:textColor="@color/goal_activity_reducetimebtn_text_view_text_color"
+				android:textSize="@dimen/goal_activity_reducetimebtn_text_view_text_size"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="0dp"
+				tools:layout_editor_absoluteY="2dp" />
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/hoursview_constraint_layout"
+				android:layout_width="@dimen/goal_activity_hoursview_constraint_layout_width"
+				android:layout_height="@dimen/goal_activity_hoursview_constraint_layout_height"
+				android:layout_marginStart="@dimen/goal_activity_hoursview_constraint_layout_margin_start"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toRightOf="@+id/reducetimebtn_text_view"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="35dp"
+				tools:layout_editor_absoluteY="2dp">
+
+				<TextView
+					android:id="@+id/lblhours_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/goal_activity_lblhours_text_view_margin_start"
+					android:layout_marginEnd="@dimen/goal_activity_lblhours_text_view_margin_end"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblhours_text_view_text"
+					android:textColor="@color/goal_activity_lblhours_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblhours_text_view_text_size"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintHorizontal_weight="0.62"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					tools:layout_editor_absoluteX="10dp"
+					tools:layout_editor_absoluteY="44dp" />
+
+				<TextView
+					android:id="@+id/lblhoursvalue_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblhoursvalue_text_view_text"
+					android:textColor="@color/goal_activity_lblhoursvalue_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblhoursvalue_text_view_text_size"
+					app:layout_constraintHorizontal_weight="1"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:layout_editor_absoluteX="0dp"
+					tools:layout_editor_absoluteY="0dp" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<TextView
+				android:id="@+id/lblcolon1_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="23dp"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_lblcolon1_text_view_text"
+				android:textColor="@color/goal_activity_lblcolon1_text_view_text_color"
+				android:textSize="@dimen/goal_activity_lblcolon1_text_view_text_size"
+				app:layout_constraintEnd_toStartOf="@+id/minutesview_constraint_layout"
+				app:layout_constraintLeft_toRightOf="@+id/hoursview_constraint_layout"
+				app:layout_constraintTop_toTopOf="parent" />
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/minutesview_constraint_layout"
+				android:layout_width="@dimen/goal_activity_minutesview_constraint_layout_width"
+				android:layout_height="@dimen/goal_activity_minutesview_constraint_layout_height"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="98dp"
+				tools:layout_editor_absoluteY="2dp">
+
+				<TextView
+					android:id="@+id/lblminutes_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/goal_activity_lblminutes_text_view_margin_start"
+					android:layout_marginEnd="@dimen/goal_activity_lblminutes_text_view_margin_end"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblminutes_text_view_text"
+					android:textColor="@color/goal_activity_lblminutes_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblminutes_text_view_text_size"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintHorizontal_weight="0.79"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					tools:layout_editor_absoluteX="6dp"
+					tools:layout_editor_absoluteY="44dp" />
+
+				<TextView
+					android:id="@+id/lblminsvalue_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblminsvalue_text_view_text"
+					android:textColor="@color/goal_activity_lblminsvalue_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblminsvalue_text_view_text_size"
+					app:layout_constraintHorizontal_weight="1"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:layout_editor_absoluteX="0dp"
+					tools:layout_editor_absoluteY="0dp" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<TextView
+				android:id="@+id/lblcolon2_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="@dimen/goal_activity_lblcolon2_text_view_margin_end"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_lblcolon2_text_view_text"
+				android:textColor="@color/goal_activity_lblcolon2_text_view_text_color"
+				android:textSize="@dimen/goal_activity_lblcolon2_text_view_text_size"
+				app:layout_constraintRight_toLeftOf="@+id/secondsview_constraint_layout"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="148dp"
+				tools:layout_editor_absoluteY="0dp" />
+
+			<androidx.constraintlayout.widget.ConstraintLayout
+				android:id="@+id/secondsview_constraint_layout"
+				android:layout_width="@dimen/goal_activity_secondsview_constraint_layout_width"
+				android:layout_height="@dimen/goal_activity_secondsview_constraint_layout_height"
+				android:layout_marginEnd="@dimen/goal_activity_secondsview_constraint_layout_margin_end"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintRight_toLeftOf="@+id/addtimebtn_text_view"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="161dp"
+				tools:layout_editor_absoluteY="2dp">
+
+				<TextView
+					android:id="@+id/lblhours_two_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="@dimen/goal_activity_lblhours_two_text_view_margin_start"
+					android:layout_marginEnd="@dimen/goal_activity_lblhours_two_text_view_margin_end"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblhours_two_text_view_text"
+					android:textColor="@color/goal_activity_lblhours_two_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblhours_two_text_view_text_size"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintHorizontal_weight="0.83"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					tools:layout_editor_absoluteX="5dp"
+					tools:layout_editor_absoluteY="44dp" />
+
+				<TextView
+					android:id="@+id/lblsecondsvalue_text_view"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:fontFamily="@font/font_roboto_regular"
+					android:gravity="center"
+					android:text="@string/goal_activity_lblsecondsvalue_text_view_text"
+					android:textColor="@color/goal_activity_lblsecondsvalue_text_view_text_color"
+					android:textSize="@dimen/goal_activity_lblsecondsvalue_text_view_text_size"
+					app:layout_constraintHorizontal_weight="1"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent"
+					tools:layout_editor_absoluteX="0dp"
+					tools:layout_editor_absoluteY="0dp" />
+			</androidx.constraintlayout.widget.ConstraintLayout>
+
+			<TextView
+				android:id="@+id/addtimebtn_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/goal_activity_addtimebtn_text_view_margin_top"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_addtimebtn_text_view_text"
+				android:textColor="@color/goal_activity_addtimebtn_text_view_text_color"
+				android:textSize="@dimen/goal_activity_addtimebtn_text_view_text_size"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="224dp"
+				tools:layout_editor_absoluteY="2dp" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<TextView
+			android:id="@+id/lbldurationtarget_text_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="88dp"
+			android:fontFamily="@font/font_roboto_regular"
+			android:gravity="center"
+			android:text="@string/goal_activity_lbldurationtarget_text_view_text"
+			android:textColor="@color/goal_activity_lbldurationtarget_text_view_text_color"
+			android:textSize="@dimen/goal_activity_lbldurationtarget_text_view_text_size"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/startactivitybtn_two_constraint_layout"
+			android:layout_width="108dp"
+			android:layout_height="35dp"
+			android:layout_marginEnd="28dp"
+			android:layout_marginBottom="44dp"
+			android:background="@color/goal_activity_startactivitybtn_two_constraint_layout_background_color"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="@+id/timerarea_constraint_layout">
+
+			<TextView
+				android:id="@+id/lblstartactivity_two_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="center"
+				android:text="@string/goal_activity_lblstartactivity_two_text_view_text"
+				android:textColor="@color/goal_activity_lblstartactivity_two_text_view_text_color"
+				android:textSize="@dimen/goal_activity_lblstartactivity_two_text_view_text_size"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintRight_toRightOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="32dp"
+				tools:layout_editor_absoluteY="5dp" />
+		</androidx.constraintlayout.widget.ConstraintLayout>
+
+		<com.gusakov.library.PulseCountDown
+			android:id="@+id/pulseCountDown"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="5"
+			android:textSize="100sp"
+			app:pc_startValue="5"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			android:visibility="invisible"/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:id="@+id/section1_constraint_layout"
+		android:layout_width="0dp"
+		android:layout_height="@dimen/goal_activity_section1_constraint_layout_height"
+		app:layout_constraintHorizontal_weight="1"
+		app:layout_constraintLeft_toLeftOf="parent"
+		app:layout_constraintRight_toRightOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		tools:layout_editor_absoluteX="0dp"
+		tools:layout_editor_absoluteY="0dp">
+	
+		<View
+			android:id="@+id/section1bg_constraint_layout"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/goal_activity_section1bg_constraint_layout_height"
+			android:background="@color/goal_activity_section1bg_constraint_layout_background_color"
+			app:layout_constraintHorizontal_weight="1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteX="0dp"
+			tools:layout_editor_absoluteY="0dp"/>
+	
+		<androidx.constraintlayout.widget.ConstraintLayout
+			android:id="@+id/apptitle_constraint_layout"
+			android:layout_width="0dp"
+			android:layout_height="@dimen/goal_activity_apptitle_constraint_layout_height"
+			android:layout_marginTop="@dimen/goal_activity_apptitle_constraint_layout_margin_top"
+			android:background="@color/goal_activity_apptitle_constraint_layout_background_color"
+			app:layout_constraintHorizontal_weight="1"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			tools:layout_editor_absoluteX="0dp"
+			tools:layout_editor_absoluteY="10dp">
+		
+			<TextView
+				android:id="@+id/lblapptitle_text_view"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/goal_activity_lblapptitle_text_view_margin_start"
+				android:fontFamily="@font/font_roboto_regular"
+				android:gravity="start"
+				android:text="@string/goal_activity_lblapptitle_text_view_text"
+				android:textColor="@color/goal_activity_lblapptitle_text_view_text_color"
+				android:textSize="@dimen/goal_activity_lblapptitle_text_view_text_size"
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintLeft_toLeftOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:layout_editor_absoluteX="49dp"
+				tools:layout_editor_absoluteY="5dp"/>
+		</androidx.constraintlayout.widget.ConstraintLayout>
+	
+		<ImageView
+			android:id="@+id/applogo_image_view"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="center"
+			android:src="@drawable/applogo_7"
+			app:layout_constraintLeft_toLeftOf="parent"
+			app:layout_constraintRight_toRightOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/apptitle_constraint_layout"
+			tools:layout_editor_absoluteX="154dp"
+			tools:layout_editor_absoluteY="47dp"/>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

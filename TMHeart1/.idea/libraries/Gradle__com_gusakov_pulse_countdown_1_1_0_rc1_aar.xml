@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.gusakov:pulse-countdown:1.1.0-rc1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1a703cefbfff2d9e439c83198ad0e70/pulse-countdown-1.1.0-rc1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f1a703cefbfff2d9e439c83198ad0e70/pulse-countdown-1.1.0-rc1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gusakov/pulse-countdown/1.1.0-rc1/7b5a9755ad99c6a9f432e9b2935b95e94aad044a/pulse-countdown-1.1.0-rc1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.gusakov/pulse-countdown/1.1.0-rc1/32e16ed6aec117f54a93d8de59ea53160d1cd2c/pulse-countdown-1.1.0-rc1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

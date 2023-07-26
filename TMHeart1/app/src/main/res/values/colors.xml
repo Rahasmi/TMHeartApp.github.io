@@ -1,0 +1,259 @@
+<resources>
+	
+	<!-- Project level resources -->
+	<color name="color_primary">#000000</color>
+	<color name="color_hint_text">#D0D1D5</color>
+	<color name="color_primary_dark">#000000</color>
+	<color name="material_bottom_sheet_item">#000000DE</color>
+	<color name="color_click_overlay">#555555</color>
+	<color name="color_accent">#000000</color>
+	<color name="material_bottom_sheet_title">#0000008A</color>
+	
+	<!-- Resources for SignUpActivity -->
+	<color name="sign_up_activity_lblemail_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_lblname_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvmobile_edit_text_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_lblsignup_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvname_edit_text_text_color">#000000</color>
+	<color name="sign_up_activity_tvname_edit_text_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_lblpassword_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvemail_edit_text_text_color">#000000</color>
+	<color name="sign_up_activity_signupbg_constraint_layout_background_color">#505A7D</color>
+	<color name="sign_up_activity_signupbtn_button_background_color">#CF0105</color>
+	<color name="sign_up_activity_tvemail_edit_text_border_color">#707070</color>
+	<color name="sign_up_activity_tvrefcode_edit_text_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_shapeline_constraint_layout_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvname_edit_text_border_color">#707070</color>
+	<color name="sign_up_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="sign_up_activity_tvpassword_edit_text_text_color">#000000</color>
+	<color name="sign_up_activity_tvemail_edit_text_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvpassword_edit_text_border_color">#707070</color>
+	<color name="sign_up_activity_tvpassword_edit_text_background_color">#FFFFFF</color>
+	<color name="sign_up_activity_signupbtn_button_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvmobile_edit_text_border_color">#707070</color>
+	<color name="sign_up_activity_lblrefcode_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvrefcode_edit_text_text_color">#000000</color>
+	<color name="sign_up_activity_lbllogin_button_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvrefcode_edit_text_border_color">#707070</color>
+	<color name="sign_up_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="sign_up_activity_tvmobile_edit_text_text_color">#000000</color>
+	<color name="sign_up_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="sign_up_activity_section1_constraint_layout_background_color">#252B3E</color>
+	<color name="sign_up_activity_lblmobile_text_view_text_color">#FFFFFF</color>
+	
+	<!-- Resources for ReferActivity -->
+	<color name="refer_activity_shapeline_constraint_layout_background_color">#FFFFFF</color>
+	<color name="refer_activity_btncopy_button_background_color">#FFFFFF</color>
+	<color name="refer_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="refer_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="refer_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="refer_activity_etrefcode_edit_text_text_color">#FB8205</color>
+	<color name="refer_activity_btninvite_button_background_color">#CF0105</color>
+	<color name="refer_activity_lblrefcode_text_view_text_color">#FFFFFF</color>
+	<color name="refer_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="refer_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="refer_activity_lblinvitemessage_text_view_text_color">#FAF7F7</color>
+	<color name="refer_activity_btncopy_button_text_color">#F00B0B</color>
+	<color name="refer_activity_btninvite_button_text_color">#FFFFFF</color>
+	<color name="refer_activity_lblback_button_text_color">#FFFFFF</color>
+	<color name="refer_activity_etrefcode_edit_text_background_color">#505A7D</color>
+	<color name="refer_activity_btncopy_button_border_color">#707070</color>
+	
+	<!-- Resources for LoginPageActivity -->
+	<color name="login_page_activity_tvusername_edit_text_text_color">#000000</color>
+	<color name="login_page_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="login_page_activity_tvpassword_edit_text_text_color">#000000</color>
+	<color name="login_page_activity_tvusername_edit_text_border_color">#707070</color>
+	<color name="login_page_activity_tvpassword_edit_text_border_color">#707070</color>
+	
+	<!-- Resources for ProfileActivity -->
+	<color name="profile_activity_bgweight_constraint_layout_background_color">#FDA765</color>
+	<color name="profile_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="profile_activity_lblcurrentweightvalu_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgheight_constraint_layout_background_color">#FDA765</color>
+	<color name="profile_activity_bgidealweightvalue_constraint_layout_background_color">#FD65E6</color>
+	<color name="profile_activity_lblheartrate_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblheightvalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgcurrentheartrate_constraint_layout_background_color">#FD65E6</color>
+	<color name="profile_activity_goalbtn_button_background_color">#19D6B9</color>
+	<color name="profile_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="profile_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="profile_activity_lblavgheartrate_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblcurrentweight_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblcurrentheartrate_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_sectionprofiledata_constraint_layout_background_color">#505A7D</color>
+	<color name="profile_activity_bgavgheartrate_constraint_layout_background_color">#FD657C</color>
+	<color name="profile_activity_goalbtn_button_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblweight_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblweightvalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblalarmraised_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblidealheartrate_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblidealweight_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_tveditprofile_button_text_color">#FFFFFF</color>
+	<color name="profile_activity_tvgoalstatus_two_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblavgheartratevalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblcurrentheartratev_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgavgweight_constraint_layout_background_color">#FD65E6</color>
+	<color name="profile_activity_tvgoalstatus_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblheight_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblagevalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblavgweight_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblsignupbtn_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_sectiontargetmessage_constraint_layout_background_color">#EFA10E</color>
+	<color name="profile_activity_bgage_constraint_layout_background_color">#FDA765</color>
+
+	<color name="profile_activity_bgidealheartrate_constraint_layout_background_color">#FD65E6</color>
+	<color name="profile_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgcurrentweight_constraint_layout_background_color">#FD6565</color>
+	<color name="profile_activity_sectionalarmraise_constraint_layout_background_color">#EFA10E</color>
+	<color name="profile_activity_lbltargetmessage_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="profile_activity_lblage_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgheartrate_constraint_layout_background_color">#505A7D</color>
+	<color name="profile_activity_backbtn_constraint_layout_background_color">#CF0105</color>
+	<color name="profile_activity_lblweight_two_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_bgweight_two_constraint_layout_background_color">#505A7D</color>
+	<color name="profile_activity_lblheartvalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblavgweightvalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblidealweightvalue_text_view_text_color">#FFFFFF</color>
+	<color name="profile_activity_lblprofile_text_view_text_color">#FFFFFF</color>
+	
+	<!-- Resources for ConfigureActivity -->
+	<color name="configure_activity_tvdob_edit_text_text_color">#000000</color>
+	<color name="configure_activity_lblreferfriend_button_text_color">#19D6B9</color>
+	<color name="configure_activity_lblconfigure_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_lbldob_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_btnsavedetails_button_background_color">#CF0105</color>
+	<color name="configure_activity_tvsex_tab_bar_border_color">#707070</color>
+	<color name="configure_activity_lblname_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_tvname_edit_text_border_color">#707070</color>
+	<color name="configure_activity_lblweight_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="configure_activity_tvweight_edit_text_border_color">#707070</color>
+	<color name="configure_activity_tvheight_edit_text_border_color">#707070</color>
+	<color name="configure_activity_tvdob_edit_text_border_color">#707070</color>
+	<color name="configure_activity_configurebg_constraint_layout_background_color">#505A7D</color>
+	<color name="configure_activity_tvheight_edit_text_text_color">#000000</color>
+	<color name="configure_activity_shapeline_two_constraint_layout_background_color">#19D6B9</color>
+	<color name="configure_activity_tvname_edit_text_background_color">#FFFFFF</color>
+	<color name="configure_activity_tvdob_edit_text_background_color">#FFFFFF</color>
+	<color name="configure_activity_shapeline_constraint_layout_background_color">#FFFFFF</color>
+	<color name="configure_activity_lbldelete_button_text_color">#FFFFFF</color>
+	<color name="configure_activity_lblsex_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_lblheight_text_view_text_color">#FFFFFF</color>
+	<color name="configure_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="configure_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="configure_activity_tvweight_edit_text_background_color">#FFFFFF</color>
+	<color name="configure_activity_tvname_edit_text_text_color">#000000</color>
+	<color name="configure_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="configure_activity_tvsex_tab_bar_text_color">#000000</color>
+	<color name="configure_activity_tvweight_edit_text_text_color">#000000</color>
+	<color name="configure_activity_tvheight_edit_text_background_color">#FFFFFF</color>
+	<color name="configure_activity_btnsavedetails_button_text_color">#FFFFFF</color>
+	<color name="configure_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	
+	<!-- Resources for SubscriptionActivity -->
+	<color name="subscription_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="subscription_activity_lblitemname_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_tvchooseplan_button_text_color">#13C08A</color>
+	<color name="subscription_activity_lblvalidmonthvalue_two_text_view_text_color">#050000</color>
+	<color name="subscription_activity_lblplanamount_four_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_planbg_four_constraint_layout_background_color">#FFFFFF</color>
+	<color name="subscription_activity_sectionplan3_constraint_layout_background_color">#505A7D</color>
+	<color name="subscription_activity_lblplanamount_two_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblitemname_two_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_sectionplan4_constraint_layout_background_color">#505A7D</color>
+	<color name="subscription_activity_tvchooseplane_button_text_color">#13C08A</color>
+	<color name="subscription_activity_planbg_constraint_layout_border_color">#707070</color>
+	<color name="subscription_activity_lblitemname_seven_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblplanamount_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="subscription_activity_lblitemname_four_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_tvchooseplan_three_button_text_color">#13C08A</color>
+	<color name="subscription_activity_lblplanamount_three_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblvalidmonth_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="subscription_activity_planbg_four_constraint_layout_border_color">#707070</color>
+	<color name="subscription_activity_tvchooseplan_two_button_text_color">#13C08A</color>
+	<color name="subscription_activity_planbg_two_constraint_layout_border_color">#707070</color>
+	<color name="subscription_activity_lblitemname_three_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblvalidmonth_two_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblvalidyear_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblitemname_five_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblvalidyearvalue_text_view_text_color">#050000</color>
+	<color name="subscription_activity_sectionplan2_constraint_layout_background_color">#505A7D</color>
+	<color name="subscription_activity_planbg_three_constraint_layout_border_color">#707070</color>
+	<color name="subscription_activity_sectionplan1_constraint_layout_background_color">#505A7D</color>
+	<color name="subscription_activity_lblitemname_six_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="subscription_activity_planbg_constraint_layout_background_color">#FFFFFF</color>
+	<color name="subscription_activity_lblvalidmonth_three_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_lblsignup_text_view_text_color">#FFFFFF</color>
+	<color name="subscription_activity_signupbtn_button_background_color">#CF0105</color>
+	<color name="subscription_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="subscription_activity_lblvalidmonthvalue_text_view_text_color">#050000</color>
+	<color name="subscription_activity_lblvalidmonthvalue_three_text_view_text_color">#050000</color>
+	<color name="subscription_activity_planbg_three_constraint_layout_background_color">#FFFFFF</color>
+	<color name="subscription_activity_lblitemname_eight_text_view_text_color">#FDFDFD</color>
+	<color name="subscription_activity_signupbtn_button_text_color">#FFFFFF</color>
+	<color name="subscription_activity_planbg_two_constraint_layout_background_color">#FFFFFF</color>
+	
+	<!-- Resources for PaymentActivity -->
+	<color name="payment_activity_backbtn_button_text_color">#FFFFFF</color>
+	<color name="payment_activity_backbtn_two_button_text_color">#FFFFFF</color>
+	<color name="payment_activity_backbtn_button_background_color">#57D30F</color>
+	<color name="payment_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="payment_activity_backbtn_two_button_background_color">#CF0105</color>
+	<color name="payment_activity_lblpayment_text_view_text_color">#FFFFFF</color>
+	<color name="payment_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="payment_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="payment_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="payment_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="low_color">#00ddff</color>
+
+	<!-- Resources for GoalActivity -->
+	<color name="goal_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="goal_activity_lblstartactivity_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblsecondsvalue_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_reducetimebtn_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblhours_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblcolon1_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_startactivitybtn_constraint_layout_background_color">#19D6B9</color>
+	<color name="goal_activity_lblminsvalue_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblhoursvalue_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblstartactivity_two_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lblhours_two_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_startactivitybtn_two_constraint_layout_background_color">#CF0105</color>
+	<color name="goal_activity_lblcolon2_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="goal_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="goal_activity_lblminutes_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_lbldurationtarget_text_view_text_color">#FFFFFF</color>
+	<color name="goal_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="goal_activity_addtimebtn_text_view_text_color">#FFFFFF</color>
+
+	<!-- Resources for TimerActivity -->
+	<color name="timer_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="timer_activity_lblhoursminutes_text_view_text_color">#FFFFFF</color>
+	<color name="timer_activity_startactivitybtn_button_text_color">#FFFFFF</color>
+	<color name="timer_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+	<color name="timer_activity_startactivitybtn_button_background_color">#19D6B9</color>
+	<color name="timer_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="timer_activity_cancelbutton_button_background_color">#CF0105</color>
+	<color name="timer_activity_cancelbutton_button_text_color">#FFFFFF</color>
+	<color name="timer_activity_lbldurationtarget_text_view_text_color">#FFFFFF</color>
+	<color name="timer_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="timer_activity_timertv_text_view_text_color">#FFFFFF</color>
+	<color name="timer_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+
+	<!-- Resources for DisclaimerActivity -->
+	<color name="disclaimer_activity_section2_constraint_layout_background_color">#353D57</color>
+	<color name="disclaimer_activity_constraint_layout_constraint_layout_background_color">#FFFFFF</color>
+	<color name="disclaimer_activity_lblapptitle_text_view_text_color">#FFFFFF</color>
+	<color name="disclaimer_activity_lbldurationtarget_text_view_text_color">#FFFFFF</color>
+	<color name="disclaimer_activity_apptitle_constraint_layout_background_color">#252B3E</color>
+	<color name="disclaimer_activity_lbldisclaimer_text_view_text_color">#FFFFFF</color>
+	<color name="disclaimer_activity_section1bg_constraint_layout_background_color">#252B3E</color>
+</resources>

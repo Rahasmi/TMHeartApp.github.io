@@ -1,0 +1,39 @@
+<resources>
+	
+	<!-- Project level resources -->
+	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+		<item name="colorPrimary">@color/color_primary</item>
+		<item name="colorPrimaryDark">@color/color_primary_dark</item>
+		<item name="colorAccent">@color/color_accent</item>
+	</style>
+	
+	<!-- LoginPageActivity -->
+	<style name="LoginPageActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- SignUpActivity -->
+	<style name="SignUpActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- SubscriptionActivity -->
+	<style name="SubscriptionActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- PaymentActivity -->
+	<style name="PaymentActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- ProfileActivity -->
+	<style name="ProfileActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- ConfigureActivity -->
+	<style name="ConfigureActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+	
+	<!-- ReferActivity -->
+	<style name="ReferActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+	<!-- GoalActivity -->
+	<style name="GoalActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+	<!-- TimerActivity -->
+	<style name="TimerActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+
+	<!-- DisclaimerActivity -->
+	<style name="DisclaimerActivityTheme" parent="Theme.AppCompat.NoActionBar"/>
+</resources>

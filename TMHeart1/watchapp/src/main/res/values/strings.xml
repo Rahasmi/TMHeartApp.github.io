@@ -1,0 +1,12 @@
+<resources>
+    <!-- Project level resources -->
+    <string name="app_name">TM Heart</string>
+
+    <!-- Resources for WatchAppActivity -->
+    <string name="watch_app_activity_lblapptitle_text_view_hint">TM Heart</string>
+    <string name="watch_app_activity_lblapptitle_three_text_view_text">Keep your wrist still</string>
+    <string name="watch_app_activity_lblapptitle_two_text_view_hint">Measuring …</string>
+    <string name="watch_app_activity_lblapptitle_text_view_text">TM Heart</string>
+    <string name="watch_app_activity_lblapptitle_three_text_view_hint">Keep your wrist still</string>
+    <string name="watch_app_activity_lblapptitle_two_text_view_text">Measuring …</string>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="box_inset_layout_padding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is box_inset_layout_padding (above variable) on square screens and
+    inner_frame_layout_padding (below variable) on round screens.
+    -->
+    <dimen name="inner_frame_layout_padding">5dp</dimen>
+    <!-- Resources for WatchAppActivity -->
+    <dimen name="watch_app_activity_apptitle_constraint_layout_height">37dp</dimen>
+    <dimen name="watch_app_activity_lblapptitle_three_text_view_margin_top">5dp</dimen>
+    <dimen name="watch_app_activity_section2_constraint_layout_height">453dp</dimen>
+    <dimen name="watch_app_activity_lblapptitle_text_view_text_size">20sp</dimen>
+    <dimen name="watch_app_activity_lblapptitle_three_text_view_text_size">16sp</dimen>
+    <dimen name="watch_app_activity_apptitle_constraint_layout_margin_top">10dp</dimen>
+    <dimen name="watch_app_activity_applogo_constraint_layout_height">200dp</dimen>
+    <dimen name="watch_app_activity_section2_constraint_layout_margin_top">359dp</dimen>
+    <dimen name="watch_app_activity_lblapptitle_two_text_view_text_size">20sp</dimen>
+    <dimen name="watch_app_activity_section1_constraint_layout_height">396dp</dimen>
+    <dimen name="watch_app_activity_lblapptitle_two_text_view_margin_top">138dp</dimen>
+</resources>
